@@ -8,7 +8,6 @@
 
 <header>
 
-  <span class="visually-hidden">Шапка сайта Техномарт</span>
   <div>
     <a href="#">
       <img src="img/icons/logo-technomart.svg" alt="Логотип магазина Техномарт" width="109" height="19">
@@ -24,7 +23,6 @@
   </div>
 
   <div>
-    <span class="visually-hidden">Информация о магазине</span>
     <p>
       Интернет-магазин строительных материалов и инструментов для ремонта
     </p>
@@ -105,14 +103,14 @@
         <li>
           <div>
             <h4>Дрели</h4>
-            Соседям на радость!
+            <span>Соседям на радость!</span>
           </div>
           <a href="catalog.html">Открыть каталог</a>
         </li>
         <li>
           <div>
             <h4>Перфораторы</h4>
-            Настоящие мужские игрушки
+            <span>Настоящие мужские игрушки</span>
           </div>
           <a href="#">Открыть каталог</a>
         </li>
@@ -121,6 +119,11 @@
       <p>
         <button type="button" aria-label="Листать слайдер назад"></button>
         <button type="button" aria-label="Листать слайдер вперед"></button>
+      </p>
+
+      <p>
+        <button type="button" aria-label="Выбрать первый слайд"></button>
+        <button type="button" aria-label="Выбрать второй слайд"></button>
       </p>
 
     </div>
@@ -306,9 +309,8 @@
     <a href="#">
       <img src="img/pictures/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
     </a>
-    <button type="button" aria-label="Нажатие на кнопку отображает форму отправки письма магазину">
-      Заблудились? Напишите нам!
-    </button>
+    <a href="#">Заблудились? Напишите нам!</a>
+    <!-- При отсутствии скрипта ведет на страницу с формой -->
 
   </section>
 
@@ -316,7 +318,6 @@
 
 <footer>
 
-  <span class="visually-hidden">Подвал сайта</span>
   <div>
     <a href="#">
       <img src="img/icons/logo-technomart.svg" alt="Логотип магазина Техномарт" width="138" height="23">
@@ -371,39 +372,61 @@
     </p>
     <span class="visually-hidden">Страницы магазина в соцсетях</span>
     <ul>
-      <li><a href="#">VK</a></li>
-      <li><a href="#">FaceBook</a></li>
-      <li><a href="#">Instagram</a></li>
+      <li>
+        <span class="visually-hidden">VK</span>
+        <a href="#"></a>
+      </li>
+      <li>
+        <span class="visually-hidden">FaceBook</span>
+        <a href="#">FaceBook</a>
+      </li>
+      <li>
+        <span class="visually-hidden">Instagram</span>
+        <a href="#">Instagram</a>
+      </li>
     </ul>
     <p>
-      Обратная связь:
+      <span>Обратная связь:</span>
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
     <p>
-      Разработано -
+      <span>Разработано -</span>
       <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
     </p>
   </div>
 
 </footer>
 
-<form id="write-us-form" method="get" action="https://echo.htmlacademy.ru/">
-  <h2 class="visibility-hidden">Форма отправки "Напишите нам"</h2>
+<form id="feedback-form" method="get" action="https://echo.htmlacademy.ru/">
+  <h2 class="visibility-hidden">Форма обратной связи</h2>
   <p>
-    <label for="wu-name">Ваше имя:</label>
-    <input type="text" id="wu-name" name="name" placeholder="Имя Фамилия" required>
+    <label for="feedback-name">Ваше имя:</label>
+    <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" required>
   </p>
   <p>
-    <label for="wu-email">Ваш e-mail:</label>
-    <input type="email" id="wu-email" name="email" placeholder="email@example.com" required>
+    <label for="feedback-email">Ваш e-mail:</label>
+    <input type="email" id="feedback-email" name="email" placeholder="email@example.com" required>
   </p>
   <p>
-    <label for="wu-text">Текст письма:</label>
-    <textarea id="wu-text" name="text" placeholder="email@example.com">В свободной форме</textarea>
+    <label for="feedback-text">Текст письма:</label>
+    <textarea id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
   </p>
   <button type="submit">Отправить</button>
   <button type="button" aria-label="Кнопка закрытия формы"></button>
 </form>
+
+<section>
+  <h2>Товар добавлен в корзину!</h2>
+  <a href="#">Оформить заказ</a>
+  <button type="button">Продолжить покупки</button>
+  <button type="button" aria-label="Закрыть окно"></button>
+</section>
+
+<section>
+  <h2 class="visually-hidden">Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
+  <!-- Здесь будет карта. Картинка или iframe -->
+  <button type="button" aria-label="Закрыть окно с картой"></button>
+</section>
 
 </body>
 </html>
