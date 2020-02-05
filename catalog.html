@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -34,8 +37,9 @@
     </p>
     <div class="user-navigation">
       <p class="user-controls">
-        <a class="user-profile" href="#">Равшан Джамшутович</a>
-        <a class="user-exit" href="#">Выйти</a>
+        <a class="user-button button-profile" href="#">Равшан Джамшутович</a>
+        <span class="visually-hidden">Выйти</span>
+        <a class="user-button button-exit" href="#"></a>
       </p>
       <a class="user-link" href="#">Мои заказы</a>
       <a class="user-link" href="#">Личный кабинет</a>
@@ -174,85 +178,85 @@
     <h2 class="visually-hidden">Список перфораторов</h2>
     <ul class="products-list list-columns-3">
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 3000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 3000</h3>
         <img class="products-picture" src="img/pictures/item-image_3000.jpg"
              alt="Стандартная модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-old" aria-label="Старая цена">22500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">15 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 6000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 6000</h3>
         <img class="products-picture" src="img/pictures/item-image_6000.jpg"
              alt="Улучшенная модель перфоратора, вес средний, сверло утолщенное 30см, диаметром 1см" width="218"
              height="170">
         <span class="products-price price-old" aria-label="Старая цена">30500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">25 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
-      <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 2000</h3>
+      <li class="products-item item-new">
+        <h3 class="products-name">Перфоратор BOSCH BFG 2000</h3>
         <img class="products-picture" src="img/pictures/item-image_2000.jpg"
              alt="Простая модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-actual" aria-label="Актуальная цена">12 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 3000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 3000</h3>
         <img class="products-picture" src="img/pictures/item-image_3000.jpg"
              alt="Стандартная модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-old" aria-label="Старая цена">22500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">15 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
-      <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 6000</h3>
+      <li class="products-item item-new">
+        <h3 class="products-name">Перфоратор BOSCH BFG 6000</h3>
         <img class="products-picture" src="img/pictures/item-image_6000.jpg"
              alt="Улучшенная модель перфоратора, вес средний, сверло утолщенное 30см, диаметром 1см" width="218"
              height="170">
         <span class="products-price price-old" aria-label="Старая цена">30500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">25 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 2000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 2000</h3>
         <img class="products-picture" src="img/pictures/item-image_2000.jpg"
              alt="Простая модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-actual" aria-label="Актуальная цена">12 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
-      <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 3000</h3>
+      <li class="products-item item-new">
+        <h3 class="products-name">Перфоратор BOSCH BFG 3000</h3>
         <img class="products-picture" src="img/pictures/item-image_3000.jpg"
              alt="Стандартная модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-old" aria-label="Старая цена">22500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">15 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 6000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 6000</h3>
         <img class="products-picture" src="img/pictures/item-image_6000.jpg"
              alt="Улучшенная модель перфоратора, вес средний, сверло утолщенное 30см, диаметром 1см" width="218"
              height="170">
         <span class="products-price price-old" aria-label="Старая цена">30500 Р.</span>
         <span class="products-price price-actual" aria-label="Актуальная цена">25 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
       <li class="products-item">
-        <h3 class="products-title">Перфоратор BOSCH BFG 2000</h3>
+        <h3 class="products-name">Перфоратор BOSCH BFG 2000</h3>
         <img class="products-picture" src="img/pictures/item-image_2000.jpg"
              alt="Простая модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
         <span class="products-price price-actual" aria-label="Актуальная цена">12 500 Р.</span>
-        <a class="products-button button-buy" href="#">Купить</a>
-        <a class="products-button button-bookmark" href="#">В закладки</a>
+        <a class="products-item-button button-buy" href="#">Купить</a>
+        <a class="products-item-button button-bookmark" href="#">В закладки</a>
       </li>
     </ul>
 
@@ -359,11 +363,11 @@
       </li>
       <li class="footer-social-item">
         <span class="visually-hidden">FaceBook</span>
-        <a href="#">FaceBook</a>
+        <a href="#"></a>
       </li>
       <li class="footer-social-item">
         <span class="visually-hidden">Instagram</span>
-        <a href="#">Instagram</a>
+        <a href="#"></a>
       </li>
     </ul>
     <p class="footer-text">
@@ -379,10 +383,10 @@
 </footer>
 
 <section class="order-popup">
-  <h2 class="order-title">Товар добавлен в корзину!</h2>
+  <h3 class="order-title">Товар добавлен в корзину!</h3>
   <p class="order-footer">
-    <a class="order-button button-buy" href="#">Оформить заказ</a>
-    <button class="order-button button-continue" type="button">Продолжить покупки</button>
+    <a class="button order-button-buy" href="#">Оформить заказ</a>
+    <button class="order-button-continue" type="button">Продолжить покупки</button>
   </p>
   <button class="order-button-close" type="button" aria-label="Закрыть окно"></button>
 </section>
