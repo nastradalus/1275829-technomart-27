@@ -100,6 +100,8 @@
       <h3 class="filter-form-title">Цена:</h3>
       <div class="filter-price-range">
         <p class="filter-price-track">
+          <span class="filter-price-line line-empty"></span>
+          <span class="filter-price-line line-fill"></span>
           <button class="filter-price-pin pin-min" type="button"
                   aria-label="Изменяет минимальную цену"></button>
           <button class="filter-price-pin pin-max" type="button"
@@ -111,7 +113,7 @@
         <label class="visually-hidden" for="filter-price-to">Цена до:</label>
         <input class="filter-price price-max" id="filter-price-to" type="number" value="3000" name="price-max">
       </div>
-      <h3 class="filter-subtitle">Производители:</h3>
+      <h3 class="filter-form-title">Производители:</h3>
       <p class="filter-row">
         <input class="filter-checkbox" type="checkbox" id="filter-manufact-1" name="manufacturers_1" value="Bosch">
         <label class="filter-checkbox-label" for="filter-manufact-1">Bosch</label>
@@ -132,7 +134,7 @@
         <input class="filter-checkbox" type="checkbox" id="filter-manufact-5" name="manufacturers_5" value="Hitachi">
         <label class="filter-checkbox-label" for="filter-manufact-5">Hitachi</label>
       </p>
-      <h3 class="filter-subtitle">Питание:</h3>
+      <h3 class="filter-form-title">Питание:</h3>
       <p class="filter-row">
         <input class="filter-radio" type="radio" id="filter-power-1" name="power" value="Аккумуляторные">
         <label class="filter-radio-label" for="filter-power-1">Аккумуляторные</label>
@@ -151,13 +153,13 @@
 
     <ul class="sorting-types-list">
       <li class="sorting-types-item active">
-        <a href="#">По цене</a>
+        <a class="sorting-types-button" href="#">По цене</a>
       </li>
       <li class="sorting-types-item">
-        <a href="#">По типу</a>
+        <a class="sorting-types-button" href="#">По типу</a>
       </li>
       <li class="sorting-types-item">
-        <a href="#">По функционалу</a>
+        <a class="sorting-types-button" href="#">По функционалу</a>
       </li>
     </ul>
     <ul class="sorting-orders-list">
@@ -268,13 +270,13 @@
     <a class="pagination-previous hidden">Предыдущая</a>
     <ul class="pagination-list">
       <li class="pagination-item current">
-        <a>1</a>
+        <a class="pagination-link">1</a>
       </li>
       <li class="pagination-item">
-        <a href="#">2</a>
+        <a class="pagination-link" href="#">2</a>
       </li>
       <li class="pagination-item">
-        <a href="#">3</a>
+        <a class="pagination-link" href="#">3</a>
       </li>
     </ul>
     <a class="pagination-next" href="#">Следующая</a>
