@@ -151,6 +151,8 @@ a {
 
 .user-link {
   color: #32425c;
+  font-size: 16px;
+  line-height: 1.13;
 
   text-decoration: underline;
 }
@@ -301,6 +303,7 @@ a {
   font-family: 'Cuprum', 'Arial Narrow', sans-serif;
   font-size: 14px;
   line-height: 1.29;
+  font-weight: normal;
 
   text-transform: uppercase;
 }
