@@ -50,7 +50,16 @@ a {
   background-color: #ba2732;
 }
 
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
 /* header styles */
+
+.header {
+  background-color: #f4f7f9;
+}
 
 .header-search {
   color: #ffffff;
@@ -58,6 +67,18 @@ a {
   line-height: 1.06;
 
   background-color: #293449;
+}
+
+.header-search .container {
+  min-height: 42px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 230px;
+  flex-shrink: 0;
 }
 
 .header-logo,
@@ -71,6 +92,10 @@ a {
 .header-logo:active,
 .footer-logo:active {
   background-color: #ba2732;
+}
+
+.search-form {
+  flex-grow: 1;
 }
 
 .search-request {
@@ -92,6 +117,10 @@ a {
   background-color: #ffffff;
 }
 
+.header-button {
+  width: 150px;
+  flex-shrink: 0;
+}
 .header-button:hover {
   background-color: #212a3a;
 }
@@ -102,6 +131,9 @@ a {
 }
 
 .header-button-order {
+  width: 150px;
+  flex-shrink: 0;
+
   background-color: #63a63e;
 }
 .header-button-order:hover {
@@ -113,23 +145,49 @@ a {
   background-color: #518534;
 }
 
+.header-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-description {
+  width: 196px;
+
   color: #ee3643;
   font-size: 16px;
   line-height: 1.44;
   font-style: italic;
 }
 
+.header-contacts {
+  width: 270px;
+
+  text-align: center;
+}
+
 .header-telephone {
+  display: block;
+
   color: #e9292a;
   font-size: 21px;
   line-height: 1;
+}
+.header-telephone:hover {
+  color: #ca2c37;
+}
+.header-telephone:active {
+  color: #ba2732;
 }
 
 .header-address {
   color: #32425c;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.user-navigation {
+  width: 281px;
 }
 
 .user-button {
@@ -164,12 +222,23 @@ a {
 }
 
 .header-navigation-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-left: 0;
+
   color: #ffffff;
   font-size: 17px;
   line-height: 1;
 
   list-style-type: none;
   background-color: #32425c;
+}
+
+.header-navigation-item {
+  flex-grow: 1;
+
+  text-align: center;
 }
 
 .header-navigation-item:hover {
@@ -183,9 +252,20 @@ a {
 /* main page styles */
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+
   color: #ffffff;
 
   list-style-type: none;
+}
+
+.advantages-item {
+  width: 300px;
+  min-height: 123px;
 }
 
 .advantages-item:nth-of-type(1) {
@@ -222,6 +302,8 @@ a {
 }
 
 .offers-list {
+  padding-left: 0;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 1.33;
@@ -230,7 +312,15 @@ a {
 }
 
 .offers-item {
+  display: none;
+  width: 620px;
+  min-height: 266px;
+
   background-color: #716156;
+}
+
+.offers-item.current {
+  display: block;
 }
 
 .offers-title {
@@ -255,7 +345,11 @@ a {
 }
 
 .products-header,
-.providers-section {
+.providers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   background-color: #f9f5f0;
 }
 
@@ -270,10 +364,20 @@ a {
 }
 
 .products-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: bold;
 
   list-style-type: none;
+}
+
+.products-item {
+  width: 220px;
 }
 
 .products-name {
@@ -282,8 +386,11 @@ a {
 }
 
 .products-price {
+  display: block;
+
   font-size: 17px;
   line-height: 1.06;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -300,11 +407,14 @@ a {
 }
 
 .products-item-button {
+  display: block;
+
   font-family: 'Cuprum', 'Arial Narrow', sans-serif;
   font-size: 14px;
   line-height: 1.29;
   font-weight: normal;
 
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -333,6 +443,21 @@ a {
   opacity: 0.3;
 }
 
+.providers-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.providers-item {
+  width: 220px;
+  min-height: 130px;
+}
+
 .services-title,
 .info-title,
 .contacts-title,
@@ -352,7 +477,21 @@ a {
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
+.services-section {
+  background-color: #f4f7f9;
+}
+
+.services-tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .services-button-list {
+  width: 240px;
+  flex-shrink: 0;
+  padding-left: 0;
+
   color: #ffffff;
   font-size: 21px;
   line-height: 1.43;
@@ -361,11 +500,13 @@ a {
 }
 
 .services-button {
+  width: 100%;
   font-weight: bold;
   color: inherit;
 
   border: none;
   background-color: #32425c;
+  text-align: left;
 }
 .services-button:hover {
   background-color: #293449;
@@ -378,6 +519,9 @@ a {
 }
 
 .services-card-list {
+  flex-grow: 1;
+  padding-left: 0;
+
   list-style-type: none;
 }
 
@@ -388,6 +532,30 @@ a {
   font-weight: normal;
 
   text-transform: uppercase;
+}
+
+.services-card-item {
+  display: none;
+  min-height: 350px;
+}
+
+.services-card-item.active {
+  display: block;
+}
+
+.about-section .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.info-section {
+  flex-grow: 1;
+}
+
+.contacts-section {
+  width: 300px;
+  flex-shrink: 0;
 }
 
 .info-list {
@@ -406,12 +574,32 @@ a {
   background-color: #32425c;
 }
 
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-info {
+  width: 322px;
+  flex-shrink: 0;
+}
+
 .footer-contacts {
   font-size: 18px;
   line-height: 1.33;
 }
 
+.footer-navigation {
+  flex-grow: 1;
+}
+
 .footer-navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0;
+
   font-size: 18px;
   line-height: 1.33;
 
@@ -435,19 +623,40 @@ a {
 }
 
 .footer-copyright {
+  width: 240px;
+  flex-shrink: 0;
+
   font-size: 16px;
   line-height: 1.13;
 }
 
 .footer-social-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-left: 0;
+
   list-style-type: none;
 }
 
 .footer-social-item {
+  width: 42px;
+  height: 42px;
+
   background-color: #212a3a;
 }
 .footer-social-item:hover {
   background-color: #ee3643;
+}
+
+.footer-feedback {
+  width: 175px;
+  flex-shrink: 0;
+}
+
+.footer-author {
+  width: 145px;
+  flex-shrink: 0;
 }
 
 .footer-link {
