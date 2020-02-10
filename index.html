@@ -21,8 +21,8 @@
         <input class="search-request" type="search" id="search-request" name="search" placeholder="Поиск:" required>
         <button class="visually-hidden" type="submit">Искать на сайте</button>
       </form>
-      <a class="header-button" href="#">Закладки: <span>0</span></a>
-      <a class="header-button" href="#">Корзина: <span>0</span></a>
+      <a class="header-button" href="#">Закладки:&nbsp;<span>0</span></a>
+      <a class="header-button" href="#">Корзина:&nbsp;<span>0</span></a>
       <a class="header-button-order" href="#">Оформить заказ</a>
     </div>
   </div>
@@ -38,10 +38,12 @@
         <span class="visually-hidden">Адрес магазина</span>
         <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
-      <p class="user-navigation">
-        <a class="user-button button-login" href="#">Войти</a>
-        <a class="user-button button-register" href="#">Регистрация</a>
-      </p>
+      <div class="user-navigation">
+        <p class="user-controls">
+          <a class="user-button button-login" href="#">Войти</a>
+          <a class="user-button button-register" href="#">Регистрация</a>
+        </p>
+      </div>
     </div>
   </div>
 
@@ -85,53 +87,63 @@
     <div class="container">
 
       <h2 class="visually-hidden">Выгодные предложения</h2>
-      <ul class="advantages-list">
-        <li class="advantages-item item-new">
+
+      <div class="advantages-row">
+
+        <div class="advantages-item item-materials item-new">
           <h3 class="advantages-title">Материалы</h3>
           <a class="advantages-button" href="#">на любой вкус</a>
-        </li>
-        <li class="advantages-item">
+        </div>
+        <div class="advantages-item item-tools">
           <h3 class="advantages-title">Инструмент</h3>
-          <a class="advantages-button" href="#">на все случаи жизни</a>
-        </li>
-        <li class="advantages-item">
+          <a class="advantages-button" href="#">на все случаи</a>
+        </div>
+        <div class="advantages-item item-tech">
           <h3 class="advantages-title">Техника</h3>
           <a class="advantages-button" href="#">для стройки</a>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Скидки 50%</h3>
-          <a class="advantages-button" href="#">на 350 товаров</a>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Доставка</h3>
-          <a class="advantages-button" href="#">бесплатно</a>
-        </li>
-      </ul>
+        </div>
 
-      <div class="offers-slider">
+      </div>
 
-        <ul class="offers-list">
-          <li class="offers-item">
-            <h4 class="offers-title">Дрели</h4>
-            <span class="offers-subtitle">Соседям на радость!</span>
-            <a class="button offers-button" href="#">Открыть каталог</a>
-          </li>
-          <li class="offers-item current">
-            <h4 class="offers-title">Перфораторы</h4>
-            <span class="offers-subtitle">Настоящие мужские игрушки</span>
-            <a class="button offers-button" href="catalog.html">Открыть каталог</a>
-          </li>
-        </ul>
+      <div class="advantages-row">
 
-        <p class="offers-nav">
-          <button class="offers-button button-previous" type="button" aria-label="Листать слайдер назад"></button>
-          <button class="offers-button button-next" type="button" aria-label="Листать слайдер вперед"></button>
-        </p>
+        <div class="offers-slider">
 
-        <p class="offers-dots">
-          <button class="offers-dot" type="button" aria-label="Выбрать первый слайд"></button>
-          <button class="offers-dot active" type="button" aria-label="Выбрать второй слайд"></button>
-        </p>
+          <ul class="offers-list">
+            <li class="offers-item current">
+              <h4 class="offers-title">Дрели</h4>
+              <span class="offers-subtitle">Соседям на радость!</span>
+              <a class="button offers-button" href="#">Открыть каталог</a>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-title">Перфораторы</h4>
+              <span class="offers-subtitle">Настоящие мужские игрушки</span>
+              <a class="button offers-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+
+          <p class="offers-nav">
+            <button class="offers-button button-previous" type="button" aria-label="Листать слайдер назад"></button>
+            <button class="offers-button button-next" type="button" aria-label="Листать слайдер вперед"></button>
+          </p>
+
+          <p class="offers-dots">
+            <button class="offers-dot active" type="button" aria-label="Выбрать первый слайд"></button>
+            <button class="offers-dot" type="button" aria-label="Выбрать второй слайд"></button>
+          </p>
+
+        </div>
+
+        <div class="advantages-column">
+          <div class="advantages-item item-sale">
+            <h3 class="advantages-title">Скидки 50%</h3>
+            <a class="advantages-button" href="#">на 350 товаров</a>
+          </div>
+          <div class="advantages-item item-delivery">
+            <h3 class="advantages-title">Доставка</h3>
+            <a class="advantages-button" href="#">бесплатно</a>
+          </div>
+        </div>
 
       </div>
 
@@ -154,7 +166,7 @@
           <img class="products-picture" src="img/pictures/item-image_9000.jpg" alt="Легкий перфоратор с длинным сверлом 50см, диаметром 0,5см"
                width="218" height="170">
           <span class="products-price price-old" aria-label="Старая цена">32500 Р.</span>
-          <span class="products-price price-actual" aria-label="Актуальная цена">25 500 Р.</span>
+          <span class="products-price price-actual" aria-label="Актуальная цена">25500 Р.</span>
           <a class="products-item-button button-buy" href="#">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
         </li>
@@ -163,7 +175,7 @@
           <img class="products-picture" src="img/pictures/item-image_3000.jpg"
                alt="Стандартная модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
           <span class="products-price price-old" aria-label="Старая цена">22500 Р.</span>
-          <span class="products-price price-actual" aria-label="Актуальная цена">15 500 Р.</span>
+          <span class="products-price price-actual" aria-label="Актуальная цена">15500 Р.</span>
           <a class="products-item-button button-buy" href="#">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
         </li>
@@ -173,7 +185,7 @@
                alt="Улучшенная модель перфоратора, вес средний, сверло утолщенное 30см, диаметром 1см" width="218"
                height="170">
           <span class="products-price price-old" aria-label="Старая цена">30500 Р.</span>
-          <span class="products-price price-actual" aria-label="Актуальная цена">25 500 Р.</span>
+          <span class="products-price price-actual" aria-label="Актуальная цена">25500 Р.</span>
           <a class="products-item-button button-buy" href="#">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
         </li>
@@ -181,7 +193,7 @@
           <h3 class="products-name">Перфоратор BOSCH BFG 2000</h3>
           <img class="products-picture" src="img/pictures/item-image_2000.jpg"
                alt="Простая модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
-          <span class="products-price price-actual" aria-label="Актуальная цена">12 500 Р.</span>
+          <span class="products-price price-actual" aria-label="Актуальная цена">12500 Р.</span>
           <a class="products-item-button button-buy" href="#">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
         </li>
@@ -208,17 +220,17 @@
         </li>
         <li class="providers-item">
           <a class="providers-link" href="#">
-            <img class="providers-logo" src="img/pictures/makita.jpg" alt="Makita" width="123" height="40">
+            <img class="providers-logo" src="img/pictures/makita.jpg" alt="Makita" width="125" height="45">
           </a>
         </li>
         <li class="providers-item">
           <a class="providers-link" href="#">
-            <img class="providers-logo" src="img/pictures/de-walt.jpg" alt="DeWALT" width="146" height="44">
+            <img class="providers-logo" src="img/pictures/de-walt.jpg" alt="DeWALT" width="148" height="49">
           </a>
         </li>
         <li class="providers-item">
           <a class="providers-link" href="#">
-            <img class="providers-logo" src="img/pictures/interskol.jpg" alt="Интерскол" width="200" height="88">
+            <img class="providers-logo" src="img/pictures/interskol.jpg" alt="Интерскол" width="203" height="31">
           </a>
         </li>
         <li class="providers-item">
