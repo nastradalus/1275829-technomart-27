@@ -1,4 +1,5 @@
 html {
+  min-width: 960px;
   box-sizing: border-box;
 
   font-family: 'Cuprum', 'Arial Narrow', sans-serif;
