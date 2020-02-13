@@ -19,10 +19,14 @@
       <form class="search-form" id="search-form" method="get" action="https://echo.htmlacademy.ru/">
         <label class="visually-hidden" for="search-request">Поле для ввода поисковой фразы</label>
         <input class="search-request" type="search" id="search-request" name="search" placeholder="Поиск:" required>
+        <svg id="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+          <path fill="#ffffff"
+                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+        </svg>
         <button class="visually-hidden" type="submit">Искать на сайте</button>
       </form>
-      <a class="header-button" href="#">Закладки:&nbsp;<span>0</span></a>
-      <a class="header-button" href="#">Корзина:&nbsp;<span>0</span></a>
+      <a class="header-button bookmark" href="#">Закладки:&nbsp;<span>0</span></a>
+      <a class="header-button basket" href="#">Корзина:&nbsp;<span>0</span></a>
       <a class="header-button-order" href="#">Оформить заказ</a>
     </div>
   </div>
@@ -30,7 +34,7 @@
   <div class="header-info">
     <div class="container">
       <p class="header-description">
-        Интернет-магазин строительных материалов и инструментов для ремонта
+        Интернет-магазин строительных материалов<br>и инструментов для ремонта
       </p>
       <p class="header-contacts">
         <span class="visually-hidden">Контактный телефон</span>
@@ -40,7 +44,14 @@
       </p>
       <div class="user-navigation">
         <p class="user-controls">
-          <a class="user-button button-login" href="#">Войти</a>
+          <a class="user-button button-login" href="#">
+            <svg id="icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+              <path fill="#c5c5c5"
+                    d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+            </svg>
+            Войти
+          </a>
           <a class="user-button button-register" href="#">Регистрация</a>
         </p>
       </div>
@@ -122,14 +133,12 @@
             </li>
           </ul>
 
-          <p class="offers-nav">
-            <button class="offers-button button-previous" type="button" aria-label="Листать слайдер назад"></button>
-            <button class="offers-button button-next" type="button" aria-label="Листать слайдер вперед"></button>
-          </p>
+          <button class="offers-nav nav-previous" type="button" aria-label="Листать слайдер назад"></button>
+          <button class="offers-nav nav-next" type="button" aria-label="Листать слайдер вперед"></button>
 
           <p class="offers-dots">
-            <button class="offers-dot active" type="button" aria-label="Выбрать первый слайд"></button>
-            <button class="offers-dot" type="button" aria-label="Выбрать второй слайд"></button>
+            <a href="#" class="offers-dot" type="button" aria-label="Выбрать первый слайд"></a>
+            <a href="#" class="offers-dot active" type="button" aria-label="Выбрать второй слайд"></a>
           </p>
 
         </div>
