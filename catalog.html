@@ -44,9 +44,23 @@
       </p>
       <div class="user-navigation">
         <p class="user-controls">
-          <a class="user-button button-profile" href="#">Равшан Джамшутович</a>
+          <a class="user-button button-profile" href="#">
+            <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+              <path fill="#c5c5c5"
+                    d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+            </svg>
+            Равшан Джамшутович
+          </a>
           <span class="visually-hidden">Выйти</span>
-          <a class="user-button button-exit" href="#"></a>
+          <a class="user-button button-exit" href="#">
+            <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+              <g fill="#c5c5c5">
+                <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+                <path fill="#c5c5c5"
+                      d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+              </g>
+            </svg>
+          </a>
         </p>
         <a class="user-link" href="#">Мои заказы</a>
         <a class="user-link" href="#">Личный кабинет</a>
@@ -59,25 +73,25 @@
       <span class="visually-hidden">Навигационное меню магазина</span>
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a href="index.html">Главная</a>
+          <a class="header-navigation-link" href="index.html">Главная</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#">Компания</a>
+          <a class="header-navigation-link" href="#">Компания</a>
         </li>
         <li class="header-navigation-item">
-          <a href="catalog.html">Каталог</a>
+          <a class="header-navigation-link" href="catalog.html">Каталог</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#">Новости</a>
+          <a class="header-navigation-link" href="#">Новости</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#">Спецпредложения</a>
+          <a class="header-navigation-link" href="#">Спецпредложения</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#">Доставка</a>
+          <a class="header-navigation-link" href="#">Доставка</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#">Контакты</a>
+          <a class="header-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </div>
@@ -92,13 +106,13 @@
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
         <span class="visually-hidden">Главная страница</span>
-        <a href="index.html"></a>
+        <a class="breadcrumbs-link" href="index.html"></a>
       </li>
       <li class="breadcrumbs-item">
-        <a href="#">Каталог</a>
+        <a class="breadcrumbs-link" href="#">Каталог</a>
       </li>
       <li class="breadcrumbs-item">
-        <a href="#">Инструмент</a>
+        <a class="breadcrumbs-link" href="#">Инструмент</a>
       </li>
       <li class="breadcrumbs-item">Перфораторы</li>
     </ul>
@@ -113,52 +127,84 @@
     <section class="filter-section">
       <h2 class="filter-title">Фильтр:</h2>
       <form class="filter-form" id="filter-form" method="get" action="https://echo.htmlacademy.ru/">
-        <h3 class="filter-form-title">Цена:</h3>
-        <div class="filter-price-range">
-          <p class="filter-price-track">
-            <span class="filter-price-line line-empty"></span>
-            <span class="filter-price-line line-fill"></span>
-            <button class="filter-price-pin pin-min" type="button"
-                    aria-label="Изменяет минимальную цену"></button>
-            <button class="filter-price-pin pin-max" type="button"
-                    aria-label="Изменяет максимальную цену"></button>
-          </p>
-          <label class="visually-hidden" for="filter-price-from">Цена от:</label>
-          <input class="filter-price price-min" id="filter-price-from" type="number" value="0" name="price-min">
-          <span class="filter-price-separator">-</span>
-          <label class="visually-hidden" for="filter-price-to">Цена до:</label>
-          <input class="filter-price price-max" id="filter-price-to" type="number" value="3000" name="price-max">
+        <div class="filter-block block-price">
+          <h3 class="filter-form-title">Цена:</h3>
+          <div class="filter-price-range">
+            <p class="filter-price-track">
+              <span class="filter-price-line line-empty"></span>
+              <span class="filter-price-line line-fill"></span>
+              <button class="filter-price-pin pin-min" type="button"
+                      aria-label="Изменяет минимальную цену"></button>
+              <button class="filter-price-pin pin-max" type="button"
+                      aria-label="Изменяет максимальную цену"></button>
+            </p>
+            <label class="visually-hidden" for="filter-price-from">Цена от:</label>
+            <input class="filter-price price-min" id="filter-price-from"
+                   type="number" min="0" step="1000" value="0" name="price-min">
+            <span class="filter-price-separator"></span>
+            <label class="visually-hidden" for="filter-price-to">Цена до:</label>
+            <input class="filter-price price-max" id="filter-price-to"
+                   type="number" min="0" step="1000" value="30000" name="price-max">
+          </div>
         </div>
-        <h3 class="filter-form-title">Производители:</h3>
-        <p class="filter-row">
-          <input class="filter-checkbox" type="checkbox" id="filter-manufact-1" name="manufacturers_1" value="Bosch">
-          <label class="filter-checkbox-label" for="filter-manufact-1">Bosch</label>
-        </p>
-        <p class="filter-row">
-          <input class="filter-checkbox" type="checkbox" id="filter-manufact-2" name="manufacturers_2" value="Интерскол">
-          <label class="filter-checkbox-label" for="filter-manufact-2">Интерскол</label>
-        </p>
-        <p class="filter-row">
-          <input class="filter-checkbox" type="checkbox" id="filter-manufact-3" name="manufacturers_3" value="Makita">
-          <label class="filter-checkbox-label" for="filter-manufact-3">Makita</label>
-        </p>
-        <p class="filter-row">
-          <input class="filter-checkbox" type="checkbox" id="filter-manufact-4" name="manufacturers_4" value="DeWalt">
-          <label class="filter-checkbox-label" for="filter-manufact-4">DeWalt</label>
-        </p>
-        <p class="filter-row">
-          <input class="filter-checkbox" type="checkbox" id="filter-manufact-5" name="manufacturers_5" value="Hitachi">
-          <label class="filter-checkbox-label" for="filter-manufact-5">Hitachi</label>
-        </p>
-        <h3 class="filter-form-title">Питание:</h3>
-        <p class="filter-row">
-          <input class="filter-radio" type="radio" id="filter-power-1" name="power" value="Аккумуляторные">
-          <label class="filter-radio-label" for="filter-power-1">Аккумуляторные</label>
-        </p>
-        <p class="filter-row">
-          <input class="filter-radio" type="radio" id="filter-power-2" name="power" value="Сетевые">
-          <label class="filter-radio-label" for="filter-power-2">Сетевые</label>
-        </p>
+        <div class="filter-block block-manufacture">
+          <h3 class="filter-form-title">Производители:</h3>
+          <p class="filter-row">
+            <label class="filter-checkbox-label">
+              <input class="filter-checkbox" type="checkbox" name="manufacturers_1" value="Bosch"
+                     checked>
+              <span class="filter-checkbox-custom"></span>
+              Bosch
+            </label>
+          </p>
+          <p class="filter-row">
+            <label class="filter-checkbox-label">
+              <input class="filter-checkbox" type="checkbox" name="manufacturers_2" value="Интерскол">
+              <span class="filter-checkbox-custom"></span>
+              Интерскол
+            </label>
+          </p>
+          <p class="filter-row">
+            <label class="filter-checkbox-label">
+              <input class="filter-checkbox" type="checkbox" name="manufacturers_3" value="Makita"
+                     checked>
+              <span class="filter-checkbox-custom"></span>
+              Makita
+            </label>
+          </p>
+          <p class="filter-row">
+            <label class="filter-checkbox-label">
+              <input class="filter-checkbox" type="checkbox" name="manufacturers_4" value="DeWalt">
+              <span class="filter-checkbox-custom"></span>
+              DeWalt
+            </label>
+          </p>
+          <p class="filter-row">
+            <label class="filter-checkbox-label">
+              <input class="filter-checkbox" type="checkbox" name="manufacturers_5" value="Hitachi">
+              <span class="filter-checkbox-custom"></span>
+              Hitachi
+            </label>
+          </p>
+        </div>
+        <div class="filter-block block-power">
+          <h3 class="filter-form-title">Питание:</h3>
+          <p class="filter-row">
+            <label class="filter-radio-label">
+              <input class="filter-radio" type="radio" name="power" value="Аккумуляторные"
+                     checked>
+              <span class="filter-radio-custom"></span>
+              Аккумуляторные
+            </label>
+          </p>
+          <p class="filter-row">
+            <label class="filter-radio-label">
+              <input class="filter-radio" type="radio" name="power" value="Сетевые">
+              <span class="filter-radio-custom"></span>
+              Сетевые
+            </label>
+          </p>
+        </div>
         <button class="filter-button-submit" type="submit">Показать</button>
       </form>
     </section>
@@ -349,33 +395,33 @@
       <span class="visually-hidden">Меню навигации по сайту</span>
       <ul class="footer-navigation-list navigation-top">
         <li class="footer-navigation-item">
-          <a href="#">Компания</a>
+          <a class="footer-navigation-link" href="#">Компания</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Новости</a>
+          <a class="footer-navigation-link" href="#">Новости</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="catalog.html">Каталог</a>
+          <a class="footer-navigation-link" href="catalog.html">Каталог</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Доставка</a>
+          <a class="footer-navigation-link" href="#">Доставка</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Компания</a>
+          <a class="footer-navigation-link" href="#">Компания</a>
         </li>
       </ul>
       <ul class="footer-navigation-list navigation-bottom">
         <li class="footer-navigation-item">
-          <a href="#">Материалы</a>
+          <a class="footer-navigation-link" href="#">Материалы</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Техника</a>
+          <a class="footer-navigation-link" href="#">Техника</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Инструмент</a>
+          <a class="footer-navigation-link" href="#">Инструмент</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Спецпредложения</a>
+          <a class="footer-navigation-link" href="#">Спецпредложения</a>
         </li>
       </ul>
     </div>
@@ -392,15 +438,15 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <span class="visually-hidden">VK</span>
-          <a class="footer-social-link" href="#"></a>
+          <a class="footer-social-link vk" href="#"></a>
         </li>
         <li class="footer-social-item">
           <span class="visually-hidden">FaceBook</span>
-          <a class="footer-social-link" href="#"></a>
+          <a class="footer-social-link facebook" href="#"></a>
         </li>
         <li class="footer-social-item">
           <span class="visually-hidden">Instagram</span>
-          <a class="footer-social-link" href="#"></a>
+          <a class="footer-social-link instagram" href="#"></a>
         </li>
       </ul>
       <p class="footer-feedback">
