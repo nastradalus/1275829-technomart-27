@@ -46,6 +46,7 @@ a {
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
+  word-break: break-word;
 
   border: none;
   border-radius: 3px;
@@ -155,12 +156,14 @@ a {
 
 .search-request + svg {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 17px;
   width: 17px;
   height: 17px;
 
   opacity: 0.3;
+
+  transform: translateY(-53%);
 }
 .search-request:hover + svg {
   opacity: 1;
@@ -179,7 +182,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 18px;
+  padding-left: 40px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+  word-break: break-word;
 }
 .header-button:hover {
   background-color: #212a3a;
@@ -191,7 +200,7 @@ a {
 }
 
 .header-button.active {
-  padding-left: 24px;
+  padding-left: 46px;
 
   background-color: #ee3643;
 }
@@ -223,19 +232,23 @@ a {
 .header-button.bookmark::before {
   width: 14px;
   height: 16px;
-  top: 12px;
+  top: 50%;
   left: 17px;
 
   background-image: url("../img/icons/icon-bookmark.svg");
+
+  transform: translateY(-56%);
 }
 
 .header-button.basket::before {
   width: 15px;
   height: 15px;
-  top: 12px;
+  top: 50%;
   left: 18px;
 
   background-image: url("../img/icons/icon-cart.svg");
+
+  transform: translateY(-60%);
 }
 
 .header-button-order {
@@ -244,6 +257,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+
+  text-align: center;
+  word-break: break-word;
 
   background-color: #63a63e;
 }
@@ -348,6 +365,7 @@ a {
 
   font-size: 21px;
   line-height: 1;
+  word-break: break-word;
 
   background-color: #ffffff;
 }
@@ -433,6 +451,7 @@ a {
   color: #32425c;
   font-size: 16px;
   line-height: 1.13;
+  word-break: break-word;
 
   text-decoration: underline;
 }
@@ -488,7 +507,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
+  padding: 10px 30px;
 
   text-align: center;
 }
@@ -582,6 +601,7 @@ a {
 }
 
 .advantages-title {
+  max-width: 145px;
   margin: 0;
 
   font-size: 24px;
@@ -663,15 +683,18 @@ a {
   font-weight: bold;
 
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .offers-subtitle {
   display: block;
   margin-top: 3px;
+
+  word-break: break-word;
 }
 
 .offers-button {
-  min-width: 195px;
+  width: 195px;
   margin-top: auto;
   margin-left: 1px;
   padding-top: 11px;
@@ -764,7 +787,9 @@ a {
 
 .products-title,
 .providers-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
 
   color: #32425c;
   font-size: 30px;
@@ -858,6 +883,7 @@ a {
 
   font-size: 18px;
   line-height: 1.15;
+  word-break: break-word;
 }
 
 .products-picture {
@@ -944,7 +970,7 @@ a {
   width: 15px;
   height: 15px;
 
-  background-image: url(../img/icons/icon-cart.svg);
+  background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   opacity: 0.3;
@@ -1047,6 +1073,8 @@ a {
 
   font-family: 'PT Sans', 'Arial', sans-serif;
   letter-spacing: 0.1px;
+
+  word-break: break-word;
 }
 
 .services-section {
@@ -1138,6 +1166,9 @@ a {
 }
 
 .services-card-title {
+  position: relative;
+  z-index: 2;
+  max-width: 375px;
   margin-top: 0;
   margin-bottom: 25px;
 
@@ -1151,6 +1182,8 @@ a {
 }
 
 .services-card-desc {
+  position: relative;
+  z-index: 2;
   width: 375px;
 }
 
@@ -1177,6 +1210,7 @@ a {
 .services-card-item.item-delivery::after {
   content: "";
   position: absolute;
+  z-index: 1;
   bottom: 0;
   right: 1px;
   width: 468px;
@@ -1238,6 +1272,8 @@ a {
 .contacts-title {
   margin-top: 0;
   margin-bottom: 26px;
+
+  word-break: break-word;
 }
 
 .info-desc:last-of-type {
@@ -1250,6 +1286,7 @@ a {
   font-size: 18px;
   line-height: 1.11;
   font-weight: bold;
+  word-break: break-word;
 
   list-style-type: none;
 }
@@ -1306,6 +1343,7 @@ a {
 .footer-info {
   flex-basis: 330px;
   flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .footer-logo {
@@ -1339,6 +1377,7 @@ a {
 
   font-size: 18px;
   line-height: 1.33;
+  text-align: center;
 
   list-style-type: none;
 }
@@ -1378,6 +1417,7 @@ a {
 .footer-copyright {
   width: 240px;
   flex-shrink: 0;
+  margin-right: 15px;
   padding-left: 1px;
 
   font-size: 16px;
@@ -1435,12 +1475,16 @@ a {
 
 .footer-feedback,
 .footer-author {
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin-left: 15px;
+
   font-size: 16px;
   line-height: 1.13;
 }
 
 .footer-feedback {
-  width: 188px;
+  width: 173px;
   flex-shrink: 0;
 }
 
@@ -1484,6 +1528,8 @@ a {
   margin-top: 16px;
   margin-bottom: 17px;
   padding-left: 0;
+
+  word-break: break-word;
 
   list-style-type: none;
 }
@@ -1552,6 +1598,8 @@ a {
   font-size: 13px;
   line-height: 1.38;
   font-weight: normal;
+
+  word-break: break-word;
 
   text-transform: uppercase;
 }
@@ -1772,6 +1820,7 @@ a {
   color: inherit;
   font-size: 13px;
   line-height: 1.38;
+  word-break: break-word;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
@@ -1820,9 +1869,14 @@ a {
   flex-shrink: 0;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 20px;
   padding-left: 0;
 
   list-style-type: none;
+}
+
+.sorting-types-item:not(:first-of-type) {
+  margin-left: 10px;
 }
 
 .sorting-types-button {
@@ -1922,6 +1976,8 @@ a {
   min-width: 38px;
   padding-top: 9px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   text-align: center;
   border: solid 1px #e5e5e5;
