@@ -154,25 +154,48 @@ a {
   background-color: #ffffff;
 }
 
-.search-request + svg {
+.search-request ~ .search-submit {
   position: absolute;
   top: 50%;
-  left: 17px;
-  width: 17px;
-  height: 17px;
+  left: 0;
+  width: 46px;
+  height: 100%;
 
+  border: none;
+  background-color: transparent;
   opacity: 0.3;
 
   transform: translateY(-53%);
 }
-.search-request:hover + svg {
+.search-request:hover ~ .search-submit {
   opacity: 1;
 }
-.search-request:focus + svg {
+.search-request:focus ~ .search-submit {
   opacity: 1;
 }
-.search-request:focus + svg path {
+.search-request:focus ~ .search-submit svg {
   fill: #ee3643;
+}
+
+.search-submit {
+  cursor: pointer;
+}
+.search-submit:hover {
+  opacity: 1;
+}
+.search-submit:focus {
+  opacity: 1;
+}
+.search-submit:active svg {
+  fill: #ee3643;
+}
+
+.search-submit svg {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+
+  transform: translateY(-46%);
 }
 
 .header-button {
@@ -747,6 +770,9 @@ a {
   display: inline-block;
   width: 10px;
   height: 10px;
+  padding: 0;
+
+  border: none;
 
   border-radius: 100%;
   background-color: #ffffff;
@@ -944,7 +970,7 @@ a {
 }
 
 .products-item-button:focus,
-.products-item:hover .products-item-button {
+.products-item:hover .products-item-button{
   position: absolute;
   z-index: 2;
   left: 41px;
@@ -1835,7 +1861,9 @@ a {
 }
 
 .filter-checkbox:disabled + .filter-checkbox-custom,
-.filter-radio:disabled + .filter-radio-custom {
+.filter-checkbox:disabled ~ .filter-checkbox-text,
+.filter-radio:disabled + .filter-radio-custom,
+.filter-radio:disabled ~ .filter-radio-text {
   opacity: 0.3;
 }
 
