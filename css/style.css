@@ -989,7 +989,7 @@ a {
   text-transform: uppercase;
 
   clip-path: none;
-  clip: initial;
+  clip: auto;
 }
 
 .products-item-button:not(:focus) {
