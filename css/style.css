@@ -651,7 +651,6 @@ a {
   border-radius: 3px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 .advantages-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -729,7 +728,6 @@ a {
   padding-left: 14px;
 
   color: inherit;
-  letter-spacing: 0.1px;
 
   border: none;
 }
@@ -1137,7 +1135,6 @@ a {
   margin-bottom: 24px;
 
   font-family: 'PT Sans', 'Arial', sans-serif;
-  letter-spacing: 0.1px;
 
   word-break: break-word;
 }
@@ -1241,7 +1238,6 @@ a {
   font-size: 36px;
   line-height: 1;
   font-weight: normal;
-  letter-spacing: 0.4px;
 
   text-transform: uppercase;
 }
@@ -1360,7 +1356,6 @@ a {
 
 .info-item {
   position: relative;
-  letter-spacing: -0.4px;
 }
 
 .info-item:not(:last-of-type) {
@@ -1457,10 +1452,6 @@ a {
 
 .footer-navigation-list.navigation-bottom .footer-navigation-item:not(:first-of-type) {
   margin-left: 59px;
-}
-
-.footer-navigation-list.navigation-top .footer-navigation-item {
-  letter-spacing: -0.2px;
 }
 
 .footer-navigation-list.navigation-bottom {
