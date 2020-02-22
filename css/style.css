@@ -763,7 +763,7 @@ a {
 
 .offers-dots {
   position: absolute;
-  bottom: 28px;
+  bottom: 30px;
   left: 50%;
   margin: 0;
 
@@ -773,6 +773,7 @@ a {
 .offers-dot {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -947,7 +948,7 @@ a {
 }
 
 .products-price.price-old {
-  margin-top: 11px;
+  margin-top: 9px;
   margin-bottom: 10px;
 
   color: #a9a9a9;
@@ -1345,6 +1346,8 @@ a {
 }
 
 .info-list {
+  margin-top: 21px;
+  margin-bottom: 21px;
   padding-left: 36px;
 
   font-size: 18px;
@@ -1357,8 +1360,11 @@ a {
 
 .info-item {
   position: relative;
-  margin-bottom: 21px;
   letter-spacing: -0.4px;
+}
+
+.info-item:not(:last-of-type) {
+  margin-bottom: 21px;
 }
 
 .info-item::before {
