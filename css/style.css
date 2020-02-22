@@ -512,6 +512,7 @@ a {
   position: relative;
   min-height: 55px;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
   padding-left: 0;
@@ -523,6 +524,10 @@ a {
   list-style-type: none;
   background-color: #32425c;
   box-shadow: 0 5px #243147;
+}
+
+.header-navigation-item {
+  min-height: 55px;
 }
 
 .header-navigation-link {
@@ -845,12 +850,22 @@ a {
   list-style-type: none;
 }
 
+.products-list.list-columns-3 .products-item {
+  margin-bottom: 20px;
+}
+
+.products-list.list-columns-4 .products-item:not(:nth-of-type(4n-3)),
+.products-list.list-columns-3 .products-item:not(:nth-of-type(3n-2)) {
+  margin-left: 20px;
+}
+
 .products-item {
   position: relative;
   width: 220px;
+  min-height: 318px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   padding-bottom: 20px;
 
@@ -881,33 +896,22 @@ a {
   transform: translate(90px, 6px) rotate(45deg);
 }
 
+.products-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border-color: #ffffff;
+}
+
+.products-item:hover .products-picture,
+.products-item .products-item-button:focus ~ .products-picture {
+  opacity: 0;
+}
+
 .products-link:hover {
   color: #ee3643;
   opacity: 0.8;
 }
 .products-link:active {
   opacity: 0.2;
-}
-
-.products-list.list-columns-3 .products-item {
-  margin-bottom: 20px;
-}
-
-.products-list.list-columns-4 .products-item:not(:nth-of-type(4n-3)),
-.products-list.list-columns-3 .products-item:not(:nth-of-type(3n-2)) {
-  margin-left: 20px;
-}
-
-.products-item:hover {
-  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border-color: #ffffff;
-}
-/*.products-item:hover .products-item-button {
-  display: block;
-}*/
-.products-item:hover .products-picture,
-.products-item .products-item-button:focus ~ .products-picture {
-  opacity: 0;
 }
 
 .products-name {
@@ -921,12 +925,17 @@ a {
   word-break: break-word;
 }
 
+.products-price-block {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
 .products-picture {
   order: -1;
 }
 
 .products-price {
-  display: block;
+  display: inline-block;
   margin-left: 8px;
   padding-left: 35px;
   padding-right: 39px;
@@ -948,6 +957,7 @@ a {
 
 .products-price.price-actual {
   position: relative;
+  align-self: center;
   margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1421,13 +1431,12 @@ a {
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-top: 18px;
-  padding-bottom: 18px;
 
   font-size: 18px;
   line-height: 1.33;
@@ -1436,12 +1445,12 @@ a {
   list-style-type: none;
 }
 
-.footer-navigation-list.navigation-top .footer-navigation-item:not(:last-of-type) {
-  margin-right: 60px;
+.footer-navigation-list.navigation-top .footer-navigation-item:not(:first-of-type) {
+  margin-left: 60px;
 }
 
-.footer-navigation-list.navigation-bottom .footer-navigation-item:not(:last-of-type) {
-  margin-right: 59px;
+.footer-navigation-list.navigation-bottom .footer-navigation-item:not(:first-of-type) {
+  margin-left: 59px;
 }
 
 .footer-navigation-list.navigation-top .footer-navigation-item {
@@ -1450,6 +1459,11 @@ a {
 
 .footer-navigation-list.navigation-bottom {
   color: #ffd180;
+}
+
+.footer-navigation-item {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .footer-navigation-link:hover {
@@ -1919,9 +1933,10 @@ a {
 
 .sorting-types-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 354px;
+  flex-basis: 364px;
   flex-shrink: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -1931,7 +1946,7 @@ a {
   list-style-type: none;
 }
 
-.sorting-types-item:not(:first-of-type) {
+.sorting-types-item {
   margin-left: 10px;
 }
 
@@ -2001,7 +2016,7 @@ a {
 
 .pagination-section {
   margin-top: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
@@ -2030,6 +2045,7 @@ a {
 .pagination-link {
   display: inline-block;
   min-width: 38px;
+  margin-bottom: 10px;
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 10px;
