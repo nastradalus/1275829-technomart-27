@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <!--  <link-->
-  <!--    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"-->
-  <!--    rel="stylesheet">-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    html {
+    /*html {
       background-image: url("img/maket/technomart-index.jpg");
       background-repeat: no-repeat;
       background-position: center top;
@@ -21,7 +20,7 @@
       background-color: white;
 
       opacity: 0.5;
-    }
+    }*/
   </style>
 </head>
 <body>
@@ -64,7 +63,7 @@
       </p>
       <div class="user-navigation">
         <p class="user-controls">
-          <a class="user-button button-login" href="#">
+          <a class="user-button button-login" href="login.html">
             <svg id="icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
               <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
               <path fill="#c5c5c5"
@@ -204,7 +203,7 @@
             <span class="visually-hidden">Актуальная цена</span>
             <span class="products-price price-actual">25500 Р.</span>
           </p>
-          <a class="products-item-button button-buy" href="#">Купить</a>
+          <a class="products-item-button button-buy" href="order.html">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
           <img class="products-picture" src="img/pictures/item-image_9000.jpg"
                alt="Легкий перфоратор с длинным сверлом 50см, диаметром 0,5см"
@@ -220,7 +219,7 @@
             <span class="visually-hidden">Актуальная цена</span>
             <span class="products-price price-actual">15500 Р.</span>
           </p>
-          <a class="products-item-button button-buy" href="#">Купить</a>
+          <a class="products-item-button button-buy" href="order.html">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
           <img class="products-picture" src="img/pictures/item-image_3000.jpg"
                alt="Стандартная модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
@@ -235,7 +234,7 @@
             <span class="visually-hidden">Актуальная цена</span>
             <span class="products-price price-actual">25500 Р.</span>
           </p>
-          <a class="products-item-button button-buy" href="#">Купить</a>
+          <a class="products-item-button button-buy" href="order.html">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
           <img class="products-picture" src="img/pictures/item-image_6000.jpg"
                alt="Улучшенная модель перфоратора, вес средний, сверло утолщенное 30см, диаметром 1см" width="218"
@@ -249,7 +248,7 @@
             <span class="visually-hidden">Актуальная цена</span>
             <span class="products-price price-actual">12500 Р.</span>
           </p>
-          <a class="products-item-button button-buy" href="#">Купить</a>
+          <a class="products-item-button button-buy" href="order.html">Купить</a>
           <a class="products-item-button button-bookmark" href="#">В закладки</a>
           <img class="products-picture" src="img/pictures/item-image_2000.jpg"
                alt="Простая модель перфоратора, вес средний, сверло 30см, диаметром 0,5см" width="218" height="170">
@@ -412,8 +411,7 @@
         <a class="contacts-map-button" href="#">
           <img src="img/pictures/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
         </a>
-        <a class="button contacts-feedback-button" href="#">Заблудились? Напишите нам!</a>
-        <!-- При отсутствии скрипта ведет на страницу с формой -->
+        <a class="button contacts-feedback-button" href="feedback.html">Заблудились? Напишите нам!</a>
 
       </section>
 
@@ -510,7 +508,7 @@
 
 </footer>
 
-<form class="feedback-form" id="feedback-form" method="get" action="https://echo.htmlacademy.ru/">
+<form class="modal modal-feedback-form" id="feedback-form" method="get" action="https://echo.htmlacademy.ru/">
   <div class="feedback-container">
     <h3 class="visually-hidden">Форма обратной связи</h3>
     <p class="feedback-column">
@@ -528,7 +526,7 @@
     <p class="feedback-row">
       <label class="feedback-label">
         Текст письма:
-        <textarea class="feedback-field" name="text" placeholder="В свободной форме"></textarea>
+        <textarea class="feedback-field" name="message" placeholder="В свободной форме"></textarea>
       </label>
     </p>
   </div>
@@ -536,27 +534,32 @@
     <button class="button feedback-button-send" type="submit">Отправить</button>
   </p>
   <span class="visually-hidden">Кнопка закрытия формы</span>
-  <button class="feedback-button-close" type="button"></button>
+  <button class="modal-close close-feedback-button" type="button"></button>
 </form>
 
-<section class="order-popup">
+<section class="modal modal-order">
   <h3 class="order-title">Товар добавлен в корзину!</h3>
   <p class="order-footer">
     <a class="button order-button-buy" href="#">Оформить заказ</a>
     <button class="order-button-continue" type="button">Продолжить покупки</button>
   </p>
   <span class="visually-hidden">Закрыть окно</span>
-  <button class="order-button-close" type="button"></button>
+  <button class="modal-close close-order-button" type="button"></button>
 </section>
 
-<section class="map-popup">
-  <div class="container">
+<section class="modal modal-map">
+  <h3 class="visually-hidden">Как до нас добраться</h3>
+  <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CKaNbWZX" width="940" height="446" frameborder="1"
+          allowfullscreen="true"></iframe>
+  <p class="map-image-container">
     <img class="map-image" src="img/pictures/map_full.jpg" width="940" height="446"
          alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-    <span class="visually-hidden">Закрыть окно с картой</span>
-    <button class="map-button-close" type="button"></button>
-  </div>
+  </p>
+  <span class="visually-hidden">Закрыть окно с картой</span>
+  <button class="modal-close close-map-button" type="button"></button>
 </section>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
