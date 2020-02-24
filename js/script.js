@@ -9,7 +9,7 @@ var mapModal = document.querySelector(".modal-map");
 var orderModal = document.querySelector(".modal-order");
 
 /* polyfill for IE11 */
-if ('NodeList' in window && !NodeList.prototype.forEach) {
+if ("NodeList" in window && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = function (callback, thisArg) {
     thisArg = thisArg || window;
     for (var i = 0; i < this.length; i++) {
@@ -45,9 +45,9 @@ window.addEventListener("keydown", function (event) {
 if (feedbackButton !== null && feedbackForm !== null) {
   var formFields = feedbackForm.querySelectorAll("[name]");
 
-  var name = feedbackForm.querySelector("[name='name']");
-  var email = feedbackForm.querySelector("[name='email']");
-  var message = feedbackForm.querySelector("[name='message']");
+  var name = feedbackForm.querySelector("[name=name]");
+  var email = feedbackForm.querySelector("[name=email]");
+  var message = feedbackForm.querySelector("[name=message]");
 
   feedbackButton.addEventListener("click", function (event) {
     event.preventDefault();

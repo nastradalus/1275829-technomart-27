@@ -3,7 +3,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
-  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   color: #000000;
   font-size: 13px;
   line-height: 1.85;
@@ -1010,7 +1010,7 @@ a {
   margin-bottom: 0;
   padding-left: 0;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
 
   list-style-type: none;
@@ -1072,7 +1072,7 @@ a {
   justify-content: center;
 
   color: #fff;
-  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 15px;
   line-height: 1.7;
 
@@ -1188,7 +1188,7 @@ a {
   margin: 0;
   padding-left: 3px;
 
-  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -1212,7 +1212,7 @@ a {
   margin: 0;
   padding-left: 3px;
 
-  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -1377,7 +1377,7 @@ a {
   margin-top: 24px;
   margin-bottom: 24px;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   word-break: break-word;
 }
@@ -1895,7 +1895,7 @@ a {
   display: inline-block;
   vertical-align: middle;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 1.38;
 
   text-transform: uppercase;
@@ -1950,7 +1950,7 @@ a {
 .filter-section {
   width: 220px;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .filter-title,
@@ -2088,11 +2088,11 @@ a {
 }
 
 .filter-price.price-min {
-  padding-left: 21px;
+  padding-left: 6px;
 }
 
 .filter-price.price-max {
-  padding-left: 17px;
+  padding-left: 3px;
 }
 
 .filter-price-separator {
@@ -2224,7 +2224,7 @@ a {
   padding-left: 19px;
   padding-right: 17px;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
 
@@ -2346,7 +2346,7 @@ a {
   margin-top: 32px;
   margin-bottom: 50px;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 16px;
 
@@ -2618,7 +2618,7 @@ a {
   padding-right: 14px;
 
   color: #999999;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
 
