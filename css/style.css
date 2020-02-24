@@ -474,6 +474,7 @@ a {
 .user-button {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 5px;
 
   font-size: 21px;
@@ -558,6 +559,7 @@ a {
 .user-link {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 17px;
   margin-right: 17px;
 
@@ -585,6 +587,7 @@ a {
   top: 50%;
   left: -17px;
   display: inline-block;
+  vertical-align: baseline;
   width: 4px;
   height: 4px;
 
@@ -765,6 +768,7 @@ a {
   max-width: 135px;
   width: 100%;
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 12px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -1016,6 +1020,10 @@ a {
   margin-bottom: 20px;
 }
 
+.products-list.list-columns-4 .products-item:nth-child(n+5) {
+  margin-top: 20px;
+}
+
 .products-list.list-columns-4 .products-item:not(:nth-of-type(4n-3)),
 .products-list.list-columns-3 .products-item:not(:nth-of-type(3n-2)) {
   margin-left: 20px;
@@ -1124,6 +1132,7 @@ a {
 
 .products-price {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 8px;
   padding-left: 35px;
   padding-right: 41px;
@@ -1505,6 +1514,7 @@ a {
 .services-card-item {
   position: relative;
   display: none;
+  vertical-align: baseline;
   width: 100%;
   min-height: 286px;
   margin-top: 43px;
@@ -1632,18 +1642,20 @@ a {
 
 .info-button {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 16px;
   min-width: 220px;
 }
 
 .contacts-map-button {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   margin-top: 7px;
 }
 
 .contacts-feedback-button {
   display: inline-block;
+  vertical-align: middle;
   min-width: 100%;
   margin-top: 32px;
 }
@@ -2227,8 +2239,6 @@ a {
 
   margin-top: 0;
   margin-bottom: 0;
-
-  display: inline-block;
 }
 
 .sorting-types-list {
@@ -2299,6 +2309,7 @@ a {
   position: relative;
   top: 1px;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .sorting-orders-button.button-asc {
@@ -2344,6 +2355,7 @@ a {
 
 .pagination-list {
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -2353,6 +2365,7 @@ a {
 
 .pagination-item {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .pagination-item:not(:first-of-type) {
@@ -2361,6 +2374,7 @@ a {
 
 .pagination-link {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 38px;
   margin-bottom: 10px;
   padding-top: 10px;

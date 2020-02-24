@@ -1,12 +1,12 @@
-const popups = document.querySelectorAll(".modal");
+var popups = document.querySelectorAll(".modal");
 
-const feedbackButton = document.querySelector(".contacts-feedback-button");
-const mapButton = document.querySelector(".contacts-map-button");
-const buyButton = document.querySelectorAll(".button-buy");
+var feedbackButton = document.querySelector(".contacts-feedback-button");
+var mapButton = document.querySelector(".contacts-map-button");
+var buyButton = document.querySelectorAll(".button-buy");
 
-const feedbackForm = document.querySelector(".modal-feedback-form");
-const mapModal = document.querySelector(".modal-map");
-const orderModal = document.querySelector(".modal-order");
+var feedbackForm = document.querySelector(".modal-feedback-form");
+var mapModal = document.querySelector(".modal-map");
+var orderModal = document.querySelector(".modal-order");
 
 /* polyfill for IE11 */
 if ('NodeList' in window && !NodeList.prototype.forEach) {
@@ -43,11 +43,11 @@ window.addEventListener("keydown", function (event) {
 });
 
 if (feedbackButton !== null && feedbackForm !== null) {
-  const formFields = feedbackForm.querySelectorAll("[name]");
+  var formFields = feedbackForm.querySelectorAll("[name]");
 
-  const name = feedbackForm.querySelector("[name='name']");
-  const email = feedbackForm.querySelector("[name='email']");
-  const message = feedbackForm.querySelector("[name='message']");
+  var name = feedbackForm.querySelector("[name='name']");
+  var email = feedbackForm.querySelector("[name='email']");
+  var message = feedbackForm.querySelector("[name='message']");
 
   feedbackButton.addEventListener("click", function (event) {
     event.preventDefault();

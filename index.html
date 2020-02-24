@@ -3,25 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /*html {
-      background-image: url("img/maket/technomart-index.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-      filter: invert(1);
-    }
-
-    body {
-      background-color: white;
-
-      opacity: 0.5;
-    }*/
-  </style>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -71,7 +57,7 @@
             </svg>
             Войти
           </a>
-          <a class="user-button button-register" href="#">Регистрация</a>
+          <a class="user-button button-register" href="registration.html">Регистрация</a>
         </p>
       </div>
     </div>
@@ -159,9 +145,9 @@
 
           <p class="offers-dots">
             <span class="visually-hidden">Выбрать слайд 1</span>
-            <button class="offers-dot" type="button"></button>
-            <span class="visually-hidden">Выбрать слайд 2</span>
             <button class="offers-dot active" type="button"></button>
+            <span class="visually-hidden">Выбрать слайд 2</span>
+            <button class="offers-dot" type="button"></button>
           </p>
 
         </div>
@@ -377,7 +363,7 @@
 
   </section>
 
-  <section class="about-section">
+  <div class="about-section">
 
     <div class="container">
 
@@ -417,7 +403,7 @@
 
     </div>
 
-  </section>
+  </div>
 
 </main>
 
@@ -501,7 +487,7 @@
       </p>
       <p class="footer-author">
         <span class="footer-text">Разработано -</span>
-        <a class="footer-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </div>
   </div>
@@ -540,7 +526,7 @@
 <section class="modal modal-order">
   <h3 class="order-title">Товар добавлен в корзину!</h3>
   <p class="order-footer">
-    <a class="button order-button-buy" href="#">Оформить заказ</a>
+    <a class="button order-button-buy" href="order.html">Оформить заказ</a>
     <button class="order-button-continue" type="button">Продолжить покупки</button>
   </p>
   <span class="visually-hidden">Закрыть окно</span>
@@ -549,8 +535,8 @@
 
 <section class="modal modal-map">
   <h3 class="visually-hidden">Как до нас добраться</h3>
-  <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CKaNbWZX" width="940" height="446" frameborder="1"
-          allowfullscreen="true"></iframe>
+  <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CKaNbWZX" width="940" height="446"
+          allowfullscreen></iframe>
   <p class="map-image-container">
     <img class="map-image" src="img/pictures/map_full.jpg" width="940" height="446"
          alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -559,7 +545,7 @@
   <button class="modal-close close-map-button" type="button"></button>
 </section>
 
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 
 </body>
 </html>
