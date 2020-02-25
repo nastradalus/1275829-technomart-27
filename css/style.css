@@ -646,7 +646,10 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 10px 30px;
+  padding-left: 30px;
+  padding-right: 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   text-align: center;
 }
@@ -1374,12 +1377,16 @@ a {
 .info-desc,
 .contacts-desc,
 .aside-text {
-  margin-top: 24px;
-  margin-bottom: 24px;
-
   font-family: "PT Sans", "Arial", sans-serif;
 
   word-break: break-word;
+}
+
+.services-desc,
+.services-card-desc,
+.contacts-desc {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .services-section {
@@ -1604,7 +1611,18 @@ a {
   word-break: break-word;
 }
 
+.info-desc:first-of-type {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.info-desc:not(:first-of-type):not(:last-of-type) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .info-desc:last-of-type {
+  margin-top: 0;
   margin-bottom: 21px;
 }
 
@@ -1615,7 +1633,6 @@ a {
 
   font-size: 18px;
   line-height: 19px;
-  font-weight: bold;
   word-break: break-word;
 
   list-style-type: none;
@@ -1733,7 +1750,7 @@ a {
 }
 
 .footer-navigation-list.navigation-top .footer-navigation-item:not(:first-of-type) {
-  margin-left: 60px;
+  margin-left: 58px;
 }
 
 .footer-navigation-list.navigation-bottom .footer-navigation-item:not(:first-of-type) {
